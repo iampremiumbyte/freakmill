@@ -3,7 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Freak Mill" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>$Freak Mill</title>
   </head>
-  <body></body>
+  <body>
+    <img src="/site.png" usemap="#image-map" class="desktop" />
+    <img src="/mobile.png" usemap="#image-map2" class="mobile" />
+
+    <div class="desktop">
+      <map name="image-map" class="desktop">
+        <area
+          id="area1"
+          target=""
+          alt=""
+          title=""
+          href=""
+          coords="699,99,860,227"
+          shape="rect"
+        />
+        <area
+          id="area2"
+          target=""
+          alt=""
+          title=""
+          href=""
+          coords="885,100,994,231"
+          shape="rect"
+        />
+        <area
+          id="area3"
+          target=""
+          alt=""
+          title=""
+          href=""
+          coords="1035,93,1169,220"
+          shape="rect"
+        />
+      </map>
+    </div>
+
+    <div class="mobile">
+      <map name="image-map2" class="mobile">
+        <area
+          id="area4"
+          target=""
+          alt=""
+          title=""
+          href=""
+          coords="109,463,284,644"
+          shape="rect"
+        />
+        <area
+          id="area5"
+          target=""
+          alt=""
+          title=""
+          href=""
+          coords="318,466,477,619"
+          shape="rect"
+        />
+        <area
+          id="area6"
+          target=""
+          alt=""
+          title=""
+          href=""
+          coords="531,465,693,589"
+          shape="rect"
+        />
+      </map>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+    <script src="/assets/js/app.js"></script>
+  </body>
 </html>
